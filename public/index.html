@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../src/script/bmi.js"></script>
+</head>
+<body class="container fluid bg-dark d-flex justify-content-center">
+    <div class="bg-light m-4 w-50 rounded">
+        <div class="bg-warning p-1 rounded-top">
+            <h3 class="text-center text-light fw-bold ">!! BMI CALCULATOR !!</h3>
+        </div>
+        <div class="m-4 row">
+            <span class="text-muted">Age (1 year or above)</span>
+            <div class="input-group my-3 w-50 ">
+                <input class="form-control" type="text" name="" id="textYear">
+                <span class="input-group-text text-muted">year</span>
+            </div>
+        </div>
+        <div class="m-4 row">
+            <div class="col">
+                <span class="text-muted">Height</span>
+                <div class="input-group my-3 w-50">
+                    <input class="form-control" type="text" name="" id="textHeight">
+                    <span class="input-group-text text-muted">cm</span>
+                </div>
+            </div>
+            <div class="col">
+                <span class="text-muted">Weight</span>
+                <div class="input-group my-3 w-50 col">
+                    <input class="form-control" type="text" name="" id="textWeight">
+                    <span class="input-group-text text-muted">kg</span>
+                </div>
+            </div>
+            <div>
+                <button onclick="calculateClick()" class="btn btn-primary float-end fw-bold">Calculate</button>
+            </div>
+            <div id="bmiShow"></div>
+        </div>
+    </div>
+</body>
+</html>
